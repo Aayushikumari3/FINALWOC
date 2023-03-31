@@ -1,0 +1,31 @@
+{
+  "name": "cafe-management-app",
+  "version": "1.0.0",
+  "description": "A Node.js Cafe Management Application with Firebase Authentication using EJS and Bootstrap.",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.3",
+    "firebase": "^8.10.0",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Node.js",
+    "Cafe Management",
+    "Firebase Authentication",
+    "EJS",
+    "Bootstrap"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
+}

@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-md-12">
+      <h1>Live Canteen Status</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Status</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <% for (var i = 0; i < items.length; i++) { %>
+          <tr>
+            <td><%= items[i].name %></td>
+            <td>
+              
+             <% const today = new Date();
+const yyyy = today.getFullYear();
+let mm = today.getMonth() + 1; 
+let dd = today.getDate();
+let currdate=''+mm+'/'+dd+'/'+yyyy+' '
+ %>
+ <!-- <%= currdate %> -->
+              <% let ohr = new Date(currdate+items[i].openingTime).getTime()  %>
+              <% let chr = new Date(currdate+items[i].closingTime).getTime()  %>
+              <% let cchr = new Date().getTime()  %>
+              <% if(ohr <= cchr && chr >= cchr ){ %>
+                <div class="btn btn-success">Open</div>
+                <div>
+                </div>
+              <% } else{ %>  
+                <div class="btn btn-danger">Closed</div>
+                
+             <% } %>
+             <!-- <%= ohr %>
+                <%= chr %>
+                <%= cchr %> -->
+            </td>
+            
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

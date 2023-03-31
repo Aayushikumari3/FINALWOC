@@ -1,0 +1,125 @@
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Home Page Content */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.canteen {
+    margin-bottom: 20px;
+    flex-basis: 45%;
+}
+
+.canteen img {
+    width: 100%;
+    height: auto;
+}
+
+.canteen h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.canteen p {
+    margin: 5px 0;
+}
+
+.canteen button {
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.upvote {
+    background-color: green;
+}
+
+.downvote {
+    background-color: red;
+}
+</style>
+<script type="text/javascript">
+function upvote() {
+    // function to handle upvote button click
+    alert("Upvoted!");
+}
+
+function downvote() {
+    // function to handle downvote button click
+    alert("Downvoted!");
+}
+</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Search</a></li>
+    </ul>
+    <div>
+        <span>Username</span>
+        <img src="profile-pic.jpg" alt="Profile Picture" height="50">
+    </div>
+</nav>
+<!-- Home Page Content -->
+<div class="container">
+<div class="canteen">
+    <img src="barista.jpg" alt="Canteen 1">
+    <h3>BARISTA</h3>
+    <p>Timings: 9am - 7pm</p>
+    <button class="upvote" onclick="upvote()">Upvote</button>
+    <button class="downvote" onclick="downvote()">Downvote</button>
+</div>
+<div class="canteen">
+    <img src="amulc.jpg" alt="Canteen 2">
+    <h3>Canteen AMUL</h3>
+    <p>Timings: 10am - 8pm</p>
+    <button class="upvote" onclick="upvote()">Upvote</button>
+    <button class="downvote" onclick="downvote()">Downvote</button>
+</div>
+<div class="canteen">
+    <img src="nescafe.png" alt="Canteen 2">
+    <h3>NESCAFE</h3>
+    <p>Timings: 10am - 8pm</p>
+    <button class="upvote" onclick="upvote()">Upvote</button>
+    <button class="downvote" onclick="downvote()">Downvote</button>
+</div>
+<div class="canteen">
+    <img src="rd.png" alt="Canteen 2">
+    <h3>Ramdhanni</h3>
+    <p>Timings: 10am - 8pm</p>
+    <button class="upvote" onclick="upvote()">Upvote</button>
+    <button class="downvote" onclick="downvote()">Downvote</button>
+</div>
+<div class="canteen">
+    <img src="amulc(1).png" alt="Canteen 2">
+    <h3>Amul_1</h3>
+    <p>Timings: 10am - 8pm</p>
+    <button class="upvote" onclick="upvote()">Upvote</button>
+    <button class="downvote" onclick="downvote()">Downvote</button>
+</div>
+</body>

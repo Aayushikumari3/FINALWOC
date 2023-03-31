@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+ 
+    <script src="https://apis.google.com/js/platform.js?client_id=197360194919-jgv8mlvdgfbcl0kag6jqh9nqsvj3mfmi.apps.googleusercontent.com" async defer></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form method="post" action="/login">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <a class="btn btn-primary mt-2" href="/auth/google"><i class="bi bi-google"></i> login with google</a>
+      <a class="btn btn-primary mt-2" href="/auth/facebook"><i class="bi bi-facebook"></i> login with facebook</a>
+      <p>Don't have an account? <a href="/register">Register here</a>.</p>
+    </div>
+    <script src="/js/script.js"></script>
+
+  
+  </body>
+</html>
